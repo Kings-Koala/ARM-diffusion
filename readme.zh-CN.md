@@ -1,4 +1,4 @@
-# 基于RL决策和Diffusion Policy的 ARM - Challenge 项目
+# 基于 RL 决策和 Diffusion Policy 的 ARM - Challenge 项目
 
 本项目旨在通过**RL抓取决策**和**Diffusion Policy**的轨迹规划方式完成 **ARM -Challenge** 挑战赛。“自主机器人操作挑战赛”（ARM Challenge）是由 RoboCup 关联举办的一项赛事，旨在吸引青年研究者和学生，参与解决关于机器人自主操作的挑战性课题，形式为教育性科学竞赛。该赛事由 RoboCup 与 MathWorks、Universal Robots 提供技术支持（此前亦与 AIPlan4EU 项目合作）。
 
