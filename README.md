@@ -1,4 +1,4 @@
-# ARM - challenge project with RL and Diffusion Policy
+# ARM - Challenge Project with RL and Diffusion Policy
 
 [![SVG Banners](https://svg-banners.vercel.app/api?type=origin&text1=ARM-diffusion%20🤖&text2=🐨%20Diffusion%20Policy%20Based%20Robot%20Manipulator%20Grasping%20System&width=800&height=200)](https://github.com/Akshay090/svg-banners)
 
