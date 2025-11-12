@@ -17,3 +17,12 @@ Participating teams are required to complete a “Recycling Task” in a dynamic
 
 
 ARM - Challenge website：[ARM-Challenge](https://arm.robocup.org/)
+
+## 1. Theoretical Basis
+在熟悉本项目之前，我们强烈建议您跟进强化学习和扩散模型等领域的相关论文和理论课程。
+
+### 📊 Related Work：
+
+ - Chi, C. et al. (2025) Diffusion policy: Visuomotor policy learning via action diffusion. *The International journal of robotics research.* [Online] 44 (10–11), 1684–1704. [[paper](https://arxiv.org/pdf/2303.04137)][[code](https://github.com/real-stanford/diffusion_policy.git)]
+ - Ze, Y. et al. (2024) *3D Diffusion Policy: Generalizable Visuomotor Policy Learning via Simple 3D Representations.* [Online] [[paper](https://arxiv.org/pdf/2403.03954)][[code](https://github.com/YanjieZe/3D-Diffusion-Policy.git)]
+ - Ren, A. Z. et al. (2024) *Diffusion Policy Policy Optimization.* [Online] [[paper](https://arxiv.org/pdf/2409.00588)][[code](https://github.com/irom-princeton/dppo)]
