@@ -6,7 +6,7 @@
 
 -🦄 English ([README.md](README.md))
 
-本项目旨在通过**RL抓取决策**和**Diffusion Policy**的轨迹规划方式完成 **ARM -Challenge** 挑战赛。“自主机器人操作挑战赛”（ARM Challenge）是由 RoboCup 关联举办的一项赛事，旨在吸引青年研究者和学生，参与解决关于机器人自主操作的挑战性课题，形式为教育性科学竞赛。该赛事由 RoboCup 与 MathWorks、Universal Robots 提供技术支持。
+本项目旨在通过**RL抓取决策**和**Diffusion Policy**的轨迹规划方式完成 **ARM -Challenge** 挑战赛。“自主机器人操作挑战赛”（ARM Challenge）是由 RoboCup 关联举办的一项赛事，旨在吸引青年研究者和学生，参与解决关于机器人自主操作的挑战性课题，形式为教育性科学竞赛。该赛事由 RoboCup 与 MathWorks、Universal Robots 提供技术支持。本项目是一种以精细化场景应用为导向的研究，也会和传统的 ARM 实现方式进行比较。
 
 
 <div align=center>
@@ -37,5 +37,7 @@ ARM - Challenge 的官网：[ARM-Challenge](https://arm.robocup.org/)
 - 流匹配与扩散模型：[MIT 6.S184](https://www.bilibili.com/video/BV1gc8Ez8EFL/?spm_id_from=333.337.search-card.all.click&vd_source=367cdd85f2bb24f751f4c11cf9a0f8eb) by Peter Holderrieth 和 Ezra Erives
 
 ## 2. 环境搭建和数据采集
+
+在本项目之前，我们已经拥有了一个基于 **Gazebo** 和 **MoveIt!** 的完整 **ARM** 项目。该项目通过基于 yolo8 和 RGB-D 深度相机的视觉识别模块对桌面物品进行识别、分割、定位，通过 MoveIt! 实现运动规划等，该项目高度成熟，分拣及避障精确度极高，可以作为演示专家。此外我们确实知道用于在 world 中生成物体的具体位姿，在数据收集中可以显式的直接将物品位姿放入规划中。为了增强在动态环境中的泛化能力，我们设置了五组物体位姿分布，在每组分布上进行50-100次专家动作演示，进行数据收集。
 
 本项目的测试环境是 Ubuntu 20.04, ROS 版本为 ROS - noetic，仿真平台是 gazebo11。
