@@ -26,3 +26,21 @@ Before getting familiar with this project, we strongly recommend that you review
  - Chi, C. et al. (2025) Diffusion policy: Visuomotor policy learning via action diffusion. *The International journal of robotics research.* [Online] 44 (10–11), 1684–1704. [[paper](https://arxiv.org/pdf/2303.04137)][[code](https://github.com/real-stanford/diffusion_policy.git)]
  - Ze, Y. et al. (2024) *3D Diffusion Policy: Generalizable Visuomotor Policy Learning via Simple 3D Representations.* [Online] [[paper](https://arxiv.org/pdf/2403.03954)][[code](https://github.com/YanjieZe/3D-Diffusion-Policy.git)]
  - Ren, A. Z. et al. (2024) *Diffusion Policy Policy Optimization.* [Online] [[paper](https://arxiv.org/pdf/2409.00588)][[code](https://github.com/irom-princeton/dppo)]
+
+### 📖 Educational Resource：
+
+- Reinforcement Learning：[Stanford CS234]([https://www.bilibili.com/video/BV1dWB2Y4EcG/?spm_id_from=333.1387.favlist.content.click&vd_source=367cdd85f2bb24f751f4c11cf9a0f8eb](https://www.youtube.com/watch?v=4ngb0IZTg8I&list=PLoROMvodv4rN4wG6Nk6sNpTEbuOSosZdX)) by Prof. Emma Brunskill 
+- Flowing Match and Diffusion Model：[MIT 6.S184]([https://www.bilibili.com/video/BV1gc8Ez8EFL/?spm_id_from=333.337.search-card.all.click&vd_source=367cdd85f2bb24f751f4c11cf9a0f8eb](https://www.youtube.com/watch?v=3dz6qfjW20o&list=PL_1TbuIu65A9rac2dMLkvXvPS5YHtADRF)) by Peter Holderrieth and Ezra Erives
+
+### 📝 Assumption：
+- The expert optimality assumption holds — the expert demonstration actions are considered reliable.
+- The dataset is multi-modal, containing both **RGB** images and action data; the model can implicitly learn obstacle avoidance from RGB inputs.
+- The Diffusion Policy possesses a certain level of generalization ability, which can be leveraged and enhanced through fine-tuning in this project.
+
+## 2. Environment Building and Data Collection
+
+Before this project, we had already developed a complete ARM system based on Gazebo and MoveIt!.
+This system uses a visual recognition module built upon YOLOv8 and an RGB-D depth camera to detect, segment, and locate objects on the table. Motion planning and execution are performed through MoveIt!, resulting in a highly mature system with excellent precision in sorting and obstacle avoidance — suitable to serve as an expert demonstrator.
+
+In addition, we have precise knowledge of the object poses generated in the simulation world, allowing us to explicitly integrate these poses into the planning process during data collection.
+To enhance generalization in dynamic environments, we defined five distinct object pose distributions, and for each distribution, conducted 50–100 expert demonstration trajectories to collect training data.
