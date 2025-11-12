@@ -19,7 +19,7 @@ Participating teams are required to complete a “Recycling Task” in a dynamic
 ARM - Challenge website：[ARM-Challenge](https://arm.robocup.org/)
 
 ## 1. Theoretical Basis
-在熟悉本项目之前，我们强烈建议您跟进强化学习和扩散模型等领域的相关论文和理论课程。
+Before getting familiar with this project, we strongly recommend that you review relevant papers and theoretical courses in fields such as reinforcement learning and diffusion models.
 
 ### 📊 Related Work：
 
