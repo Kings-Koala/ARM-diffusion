@@ -27,5 +27,9 @@ ARM - Challenge 的官网：[ARM-Challenge](https://arm.robocup.org/)
 理论课程：
 
 - 强化学习理论：[Stanford CS234](https://www.bilibili.com/video/BV1dWB2Y4EcG/?spm_id_from=333.1387.favlist.content.click&vd_source=367cdd85f2bb24f751f4c11cf9a0f8eb) by Emma Brunskill 教授
+  
 - 流匹配与扩散模型：[MIT 6.S184](https://www.bilibili.com/video/BV1gc8Ez8EFL/?spm_id_from=333.337.search-card.all.click&vd_source=367cdd85f2bb24f751f4c11cf9a0f8eb) by Peter Holderrieth 和 Ezra Erives
 
+## 2. 环境搭建和数据采集
+
+本项目的测试环境是 Ubuntu 20.04, ROS 版本为 ROS - noetic 仿真平台是 gazebo11。
